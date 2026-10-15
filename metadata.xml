@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+  <general>
+    <title><string language="en">Precepting Excellence: A Competency-Based Program for Nurse Preceptors</string></title>
+    <description><string language="en">SCORM 2004 course covering foundations of preceptorship, adult learning, evaluation, professional communication, critical thinking/time management, and reality shock, for nurse preceptors at Nizwa Hospital.</string></description>
+    <keyword><string language="en">preceptorship</string></keyword>
+    <keyword><string language="en">nursing education</string></keyword>
+    <keyword><string language="en">COPA model</string></keyword>
+  </general>
+  <educational>
+    <learningResourceType><value>simulation</value></learningResourceType>
+    <intendedEndUserRole><value>learner</value></intendedEndUserRole>
+    <context><value>training</value></context>
+  </educational>
+</lom>

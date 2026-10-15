@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="COM.NIZWAHOSPITAL.PRECEPTING.EXCELLENCE"
+          version="1"
+          xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+          xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3"
+          xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3"
+          xmlns:imsss="http://www.imsglobal.org/xsd/imsss"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                              http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
+                              http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
+                              http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
+                              http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>2004 3rd Edition</schemaversion>
+    <adlcp:location>metadata.xml</adlcp:location>
+  </metadata>
+
+  <organizations default="ORG-PRECEPTING">
+    <organization identifier="ORG-PRECEPTING" structure="hierarchical">
+      <title>Precepting Excellence: A Competency-Based Program for Nurse Preceptors</title>
+      <item identifier="ITEM-COURSE" identifierref="RES-COURSE" isvisible="true">
+        <title>Precepting Excellence</title>
+        <adlcp:completionThreshold minProgressMeasure="1.0" completedByMeasure="true"/>
+        <imsss:sequencing>
+          <imsss:controlMode choice="true" flow="true"/>
+          <imsss:deliveryControls completionSetByContent="true" objectiveSetByContent="true"/>
+        </imsss:sequencing>
+      </item>
+    </organization>
+  </organizations>
+
+  <resources>
+    <resource identifier="RES-COURSE" type="webcontent" adlcp:scormType="sco" href="index.html">
+      <file href="index.html"/>
+      <file href="imsmanifest.xml"/>
+      <file href="shared/css/theme.css"/>
+      <file href="shared/js/scorm-api-wrapper.js"/>
+      <file href="shared/js/course-engine.js"/>
+      <file href="content/module0.js"/>
+      <file href="content/module1.js"/>
+      <file href="content/module2.js"/>
+      <file href="content/module3.js"/>
+      <file href="content/module4.js"/>
+      <file href="content/module5.js"/>
+      <file href="content/module6.js"/>
+      <file href="content/module7.js"/>
+      <file href="content/index.js"/>
+    </resource>
+  </resources>
+
+</manifest>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precepting Excellence — Nizwa Hospital Clinical Education Program</title>
+<link rel="stylesheet" href="shared/css/theme.css">
+</head>
+<body>
+
+<div id="app">
+  <nav id="rail">
+    <div class="brand">
+      <div class="kicker">Nizwa Hospital · Clinical Education</div>
+      <h1>Precepting Excellence</h1>
+    </div>
+    <div id="rail-tabs"></div>
+  </nav>
+
+  <main id="main">
+    <div id="vitals-wrap">
+      <div id="vitals"></div>
+      <div id="vitals-meta">
+        <span id="vitals-module">Welcome</span>
+        <span id="vitals-pct">0% complete</span>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet-inner" id="sheet-slot"></div>
+      <div class="nav-footer" id="nav-footer"></div>
+    </div>
+  </main>
+</div>
+
+<script src="shared/js/scorm-api-wrapper.js"></script>
+<script src="content/module0.js"></script>
+<script src="content/module1.js"></script>
+<script src="content/module2.js"></script>
+<script src="content/module3.js"></script>
+<script src="content/module4.js"></script>
+<script src="content/module5.js"></script>
+<script src="content/module6.js"></script>
+<script src="content/module7.js"></script>
+<script src="content/index.js"></script>
+<script src="shared/js/course-engine.js"></script>
+<script>
+  SCORM.init();
+  const savedName = SCORM.get('cmi.learner_name') || SCORM.get('cmi.core.student_name');
+  if (savedName) State.learnerName = savedName;
+  boot();
+</script>
+</body>
+</html>
